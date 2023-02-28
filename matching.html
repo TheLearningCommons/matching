@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Matching</title>
+<style>
+</style>
+<link rel="stylesheet" href="matching_stylesheet.css">
+</head>
+<body id="entireBody">
+<header>
+<p><h1>Matching</h1>
+<p>Help your mother by translating the medical terms into layman's English. Drag each picture to it's corresponding medical term. 
+<p>Use the "Reset Matching Puzzle" button to clear the puzzle and start over. Use the "Submit Matching Puzzle" button to see if you got it right.
+</header>
+<center><div>
+	<img src="https://libapps.s3.amazonaws.com/accounts/283153/images/Headache.png" draggable="true" ondragstart="drag(event)" id="drag1" data-position="1">
+	<img src="https://libapps.s3.amazonaws.com/accounts/283153/images/Phlebotomy.png" draggable="true" ondragstart="drag(event)" id="drag2" data-position="4">
+	<img src="https://libapps.s3.amazonaws.com/accounts/283153/images/Bursitis.png" draggable="true" ondragstart="drag(event)" id="drag3" data-position="2">
+	<img src="https://libapps.s3.amazonaws.com/accounts/283153/images/Crural.png" draggable="true" ondragstart="drag(event)" id="drag4" data-position="5">
+	<img src="https://libapps.s3.amazonaws.com/accounts/283153/images/Gastrointestinal.png" draggable="true" ondragstart="drag(event)" id="drag5" data-position="3">
+	<img src="https://libapps.s3.amazonaws.com/accounts/283153/images/Epidermis.png" draggable="true" ondragstart="drag(event)" id="drag6" data-position="6">
+</div></center>
+<br>
+<div class="container">
+	<div class="Answers">
+		<div id="matchingL1" class="boxes"><br><b>Cephal</b>algia</div><div id="matchingR1" class="boxes" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>
+	<div class="Answers">
+		<div id="matchingL2" class="boxes"><br>Burs<b>itis</b></div><div id="matchingR2" class="boxes" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>
+	<div class="Answers">
+		<div id="matchingL3" class="boxes"><b>Gastro</b>intestinal trauma</div><div id="matchingR3" class="boxes" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>
+	<div class="Answers">	
+		<div id="matchingL4" class="boxes"><br><b>Phlebo</b>tomy</div><div id="matchingR4" class="boxes" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>
+	<div class="Answers">
+		<div id="matchingL5" class="boxes"><br>Crur<b>al</b></div><div id="matchingR5" class="boxes" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>
+	<div class="Answers">
+		<div id="matchingL6" class="boxes"><br>Epi<b>derm</b>is</div><div id="matchingR6" class="boxes" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	</div>
+
+</div>
+<center><button type="button" id="resetButton" onclick="reset();">Reset Matching Puzzle!</button></center>
+<br>
+<center><button type="button" id="submitButton" onclick="submit();">Submit Matching Puzzle!</button></center>
+<br>
+<div id="test"></div>
+
+
+
+
+
+
+
+
+
+<script src="mymatching.js"></script>
+</body>
+</html>
