@@ -33,7 +33,7 @@ function submit(){ //Function that checks if the puzzle is right.
 	  
 	  if (currentPosition !== correctPosition) { 
 		correct = false; //If at anytime the two numbers don't match, it'll return a false and out put a Try again.
-		document.getElementById("test").innerHTML = "That's not right. Try again! ";
+		document.getElementById("test").innerHTML = "That's not right. Try again! <b>Hint:</b> Carefully consider the bolded parts of the medical terms. You should be able to guess the match from the bolded prefix or suffix.";
 		return;
 	  }
 	});
